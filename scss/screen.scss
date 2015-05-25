@@ -1,0 +1,63 @@
+$c_destaque: green;
+.container {
+	width: auto;
+	max-width: 940px;
+	margin: 0 auto 0 auto;
+}
+
+.cabecalho {
+	background: $c_destaque;
+
+	h1 {
+		color: pink;
+		margin: 0;
+	}
+}
+
+.barra-lateral {
+	background: $c_destaque;
+	float: left;
+	width: 30%;
+}
+
+.sessao {
+	float: left;
+	width: 70%;
+}
+
+.footer {
+	background: yellow;
+	width: 100%;
+}
+
+.footer-page {
+	background: $c_destaque;
+	color: #FFF;
+}
+
+@media only screen and (max-width: 992px) {
+	.sessao {
+		width: 100%;
+		float: none;
+	}
+	.barra-lateral {
+		width: 100%;
+		float: none;
+	}
+}
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

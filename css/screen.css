@@ -1,0 +1,82 @@
+/* line 2, ../scss/screen.scss */
+.container {
+  width: auto;
+  max-width: 940px;
+  margin: 0 auto 0 auto;
+}
+
+/* line 8, ../scss/screen.scss */
+.cabecalho {
+  background: green;
+}
+/* line 11, ../scss/screen.scss */
+.cabecalho h1 {
+  color: pink;
+  margin: 0;
+}
+
+/* line 17, ../scss/screen.scss */
+.barra-lateral {
+  background: green;
+  float: left;
+  width: 30%;
+}
+
+/* line 23, ../scss/screen.scss */
+.sessao {
+  float: left;
+  width: 70%;
+}
+
+/* line 28, ../scss/screen.scss */
+.footer {
+  background: yellow;
+  width: 100%;
+}
+
+/* line 33, ../scss/screen.scss */
+.footer-page {
+  background: green;
+  color: #FFF;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 39, ../scss/screen.scss */
+  .sessao {
+    width: 100%;
+    float: none;
+  }
+
+  /* line 43, ../scss/screen.scss */
+  .barra-lateral {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 51, ../scss/screen.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 59, ../scss/screen.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 61, ../scss/screen.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 62, ../scss/screen.scss */
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
